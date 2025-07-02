@@ -5,13 +5,112 @@
 */
 
 @media (min-width: 1024px) {
-  /* .top-navigation .trigram {
+  .top-navigation .trigram {
     display: none;
-  } */
-
+  } 
   /* 👇👇👇 Add the styles that belong to the DESKTOP view only beneath 👇👇👇 */
+
+.top-navigation li :hover{
+color: #434343;
+}
+
+.teammate-social-icons :hover {
+  background-color: #676767
+}
+
+footer .social-icons :hover  {
+  color: white; 
+}
+.footer-contacts li :hover {
+  color: white;
+  text-decoration: underline;
+}
 }
 
 /* 👇👇👇 Add the media rule and the styles that are common within the TABLET and MOBILE views beneath 👇👇👇 */
+@media (min-width: 768px)  and (max-width: 1023px){
+    .top-navigation ul {
+      display: none;
+  } 
+
+  .portfolio-list{
+    flex-direction: column;
+  }
+  .portfolio-item{
+    flex-direction: row;
+  }
+  .portfolio-item-info{
+    padding-top: 20px;
+  }
+
+
+  .teammates-content{
+    padding-left: 0%;
+    padding-right: 0%;
+  }
+  .teammates-list-wrapper{
+    flex-wrap: wrap;
+    height: 20%;
+  }
+  .teammate {
+    width: 48%;
+    justify-content: center;
+    gap: 0;
+    padding: 0;
+  }
+  .teammate 
+  .teammate-img-wrapper {
+    width:100%;
+    height: 60%;
+  }
+  .teammate-img-wrapper img {
+    object-position: center;
+  }
+  .teammate-data{
+    align-items: center;
+    gap: 0;
+  }
+
+  footer .social-icons span {
+    display: none;
+  }
+  footer .social-icons div {
+    width:fit-content;
+  }
+  footer .social-icons .icon {
+    background-color: white;
+  }
+  .footer-contacts {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+  }
+  .footer-contacts > div {
+    width: 44%
+  }
+  .footer-contacts .address p {
+    width: 200px;
+    align-self: center;
+  }
+  .footer-contacts li {
+    color: white;
+  }
+  }
 
 /* 👇👇👇 Add the media rule and the styles that belong to the MOBILE view only beneath 👇👇👇 */
+
+@media (max-width: 767px) {
+
+  .portfolio-item {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .teammates-content{
+    flex-direction: row;
+  }
+
+
+
+
+}
