@@ -28,7 +28,7 @@ footer .social-icons :hover  {
 }
 
 /* 👇👇👇 Add the media rule and the styles that are common within the TABLET and MOBILE views beneath 👇👇👇 */
-@media (min-width: 768px)  and (max-width: 1023px){
+@media (max-width: 1023px){
     .top-navigation ul {
       display: none;
   } 
@@ -61,7 +61,8 @@ footer .social-icons :hover  {
   .teammate 
   .teammate-img-wrapper {
     width:100%;
-    height: 60%;
+    height: 300px;
+    object-position: bottom;
   }
   .teammate-img-wrapper img {
     object-position: center;
@@ -97,17 +98,50 @@ footer .social-icons :hover  {
   }
   }
 
-/* 👇👇👇 Add the media rule and the styles that belong to the MOBILE view only beneath 👇👇👇 */
+/*👇👇👇 Add the media rule and the styles that belong to the MOBILE view only beneath 👇👇👇 */
 
-@media (max-width: 767px) {
+@media (max-width: 768px){
 
   .portfolio-item {
     flex-direction: column;
     align-items: center;
   }
+  .portfolio-item-info{
+    align-items: center;
+  }
+  .portfolio-item-info p {
+    text-align: center;
+  }
 
-  .teammates-content{
+  .teammates-list-wrapper{
+    justify-content: center;
+  }
+  .teammate {
     flex-direction: row;
+    justify-content: left;
+    width: 450px;
+    height: fit-content;
+    align-items: center;
+    border: solid #434343;
+    padding: 15px;
+    gap: 15px
+  }
+  .teammate .teammate-img-wrapper{
+     height: 250px;
+     width: 250px;
+     padding: 15px;
+     object-position: center;
+  }
+  .teammate-img-wrapper img {
+    height: 220px;
+     width: 220px;
+  }
+  .teammate-data{
+    gap: 10px;
+    align-items: flex-start;
+  }
+  .teammate-social-icons{
+    justify-content: flex-start;
   }
 
 
